@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Focus Input on Button Click</title>
+</head>
+<style>
+   @import url("https://fonts.googleapis.com/css?family=Josefin+Sans%3A300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext");
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Josefin Sans", sans-serif;
+   }
+
+   body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #17191E;
+   }
+
+   .box {
+      background: #1e2028;
+      width: 27rem;
+      padding: 12px;
+      height: 7rem;
+      border-radius: 9px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   input {
+      background-color: #2b2a33;
+      padding: 9px;
+      border-radius: 6px;
+      color: white;
+      margin-right: 12px;
+      border: none;
+   }
+
+   button {
+      background: #8638fe;
+      color: white;
+      padding: 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+   }
+</style>
+
+<body>
+   <div class="box">
+      <input type="text" id="input_search" placeholder="Search...">
+      <button id="mybtn" onclick="activinput()">Focus Input</button>
+   </div>
+</body>
+<script>
+   let input = document.getElementById("input_search")
+   function activinput() {
+      input.focus()
+   }
+</script>
+
+</html>
